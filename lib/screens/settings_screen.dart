@@ -167,6 +167,8 @@ class _SettingsScreenState extends State<SettingsScreen> {
           const SizedBox(height: 8),
           _DangerTile(),
           const SizedBox(height: 40),
+          const _CopyrightFooter(),
+          const SizedBox(height: 24),
         ],
       ),
     );
@@ -419,6 +421,37 @@ class _DangerTile extends StatelessWidget {
           ),
         ],
       ),
+    );
+  }
+}
+
+class _CopyrightFooter extends StatelessWidget {
+  const _CopyrightFooter();
+
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      children: [
+        const Divider(),
+        const SizedBox(height: 12),
+        Icon(Icons.psychology, color: AppTheme.primary.withOpacity(0.6), size: 28),
+        const SizedBox(height: 8),
+        const Text(
+          'AI Resume Screener',
+          style: TextStyle(fontWeight: FontWeight.w700, fontSize: 14),
+        ),
+        const SizedBox(height: 4),
+        Text(
+          '© ${DateTime.now().year} Developed by Aftab Tamboli',
+          style: const TextStyle(fontSize: 12, color: AppTheme.textSecondary),
+          textAlign: TextAlign.center,
+        ),
+        const SizedBox(height: 4),
+        const Text(
+          'All rights reserved.',
+          style: TextStyle(fontSize: 11, color: AppTheme.textSecondary),
+        ),
+      ],
     );
   }
 }
