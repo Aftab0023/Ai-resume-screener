@@ -1,0 +1,54 @@
+name: ai_resume_screener
+description: AI Resume Screening & Shortlisting System
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # State management
+  provider: ^6.1.1
+
+  # Storage
+  shared_preferences: ^2.2.2
+  sqflite: ^2.3.0
+  path: ^1.9.0
+
+  # File picking
+  file_picker: ^6.1.1
+
+  # PDF parsing
+  syncfusion_flutter_pdf: ^24.1.41
+
+  # UI
+  percent_indicator: ^4.2.3
+  shimmer: ^3.0.0
+
+  # Export
+  csv: ^6.0.0
+  path_provider: ^2.1.2
+  share_plus: ^7.2.1
+
+  # HTTP
+  http: ^1.2.1
+
+  # Env
+  flutter_dotenv: ^5.1.0
+
+  # Utils
+  intl: ^0.19.0
+  uuid: ^4.3.3
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - .env
